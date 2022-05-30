@@ -1,0 +1,29 @@
+/*Operaciones*/
+
+$medida: 450px;
+$blue: blue;
+$green: green;
+
+.mapa img{
+    height: $medida;
+    width: $medida;
+}
+
+/*Hago un map para las redes
+Declaro el mapa y lo combino con un each*/
+
+$imagenes:(
+    item1: url(../imagenes/Foto1.JPG),
+    item2: url(../imagenes/Foto2.JPG),
+    item3: url(../imagenes/Foto3.JPG),
+    item4: url(../imagenes/Foto4.JPG),
+    item5: url(../imagenes/Foto5.JPG),
+    item6: url(../imagenes/Foto6.JPG),
+);
+@each $list, $link in imagenes{
+    .#{$list}{
+        background-image: $link;
+        background-position: center;
+        background-size: cover;
+    }
+}
