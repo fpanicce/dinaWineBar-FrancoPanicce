@@ -366,7 +366,7 @@ header {
   font-variant: small-caps;
 }
 
-h2 {
+.cartaCocktails h2, .cartaPlatos h2 {
   font-size: small;
 }
 
