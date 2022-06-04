@@ -248,13 +248,16 @@ header {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-      grid-template-areas: "nosotrosPic nosotrosDecrip";
+      grid-template-areas: "nosotrosPic nosotrosDescrip";
   padding-top: 10%;
   padding-bottom: 10%;
   color: black;
 }
 
 .nosotrosPic {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nosotrosPic;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,6 +267,9 @@ header {
 }
 
 .nosotrosDescrip {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nosotrosPic;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +539,7 @@ header {
 
 /* MEDIAQUERY */
 /* Media Query para 500px*/
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   /* Media Query Index */
   .containerIndex {
     display: -ms-grid;
@@ -561,13 +567,17 @@ header {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "nosotrosPic" "nosotrosDescrip";
+        grid-template-areas: "nosotrosDescrip" "nosotrosPic";
   }
-  .nosotrosDescrip {
+  .nosotrosH1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 10%;
+    padding-top: 10%;
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   /* Media Query Menu */
   .containerMenu {
