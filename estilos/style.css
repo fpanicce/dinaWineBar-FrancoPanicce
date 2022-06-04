@@ -61,7 +61,7 @@ Declaro el mapa y lo combino con un each*/
 }
 
 .item4 {
-  background-image: url(../imagenes/Foto4.JPG);
+  background-image: url(../imagenes/Foto8.JPG);
   background-position: center;
   background-size: cover;
 }
@@ -360,8 +360,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   color: black;
-  font-style: oblique;
-  font-variant: small-caps;
 }
 
 .platos {
@@ -406,8 +404,6 @@ header {
   -ms-flex-line-pack: center;
       align-content: center;
   color: black;
-  font-style: oblique;
-  font-variant: small-caps;
 }
 
 .cartaCocktails h2, .cartaPlatos h2 {
