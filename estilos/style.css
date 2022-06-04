@@ -30,7 +30,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #370232;
+  color: #b3aeb3;
 }
 
 /*Variable*/
@@ -42,11 +42,51 @@ nav ul li a {
 
 /*Hago un map para las redes
 Declaro el mapa y lo combino con un each*/
-.imagenes {
+.item1 {
+  background-image: url(../imagenes/Foto1.JPG);
   background-position: center;
   background-size: cover;
 }
 
+.item2 {
+  background-image: url(../imagenes/Foto2.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.item3 {
+  background-image: url(../imagenes/Foto3.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.item4 {
+  background-image: url(../imagenes/Foto4.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.item5 {
+  background-image: url(../imagenes/Foto5.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.item6 {
+  background-image: url(../imagenes/Foto6.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+/*Aplicamos el extend*/
+.imagenFront {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*Aplicamos el mixins*/
 * {
   padding: 0;
   margin: 0;
@@ -58,8 +98,8 @@ Declaro el mapa y lo combino con un each*/
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 0.1fr 1.5fr 1fr 0.2fr;
-      grid-template-rows: 0.1fr 1.5fr 1fr 0.2fr;
+  -ms-grid-rows: 0.1fr 1fr 1fr 0.2fr;
+      grid-template-rows: 0.1fr 1fr 1fr 0.2fr;
       grid-template-areas: "header header" "main main" "imagenFront mapa" "footer footer";
 }
 
@@ -75,7 +115,10 @@ Declaro el mapa y lo combino con un each*/
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main;
-  background-color: #370232;
+  background-image: url(../imagenes/FondoDina.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 footer {
@@ -89,14 +132,14 @@ footer {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: mapa;
-  background-color: #f2eaf1;
+  background-color: #f8f2f8;
 }
 
 .imagenFront {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: imagenFront;
-  background-color: #f2eaf1;
+  background-color: #f8f2f8;
 }
 
 header {
@@ -125,8 +168,8 @@ header {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 .textoDina {
@@ -139,22 +182,17 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: black;
 }
 
-.parrafoDina {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
+/*
+.parrafoDina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $letra;
 }
-
+*/
 .imagenFront {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,6 +209,10 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Style Nosotros */
@@ -196,7 +238,7 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main;
-  background-color: #370232;
+  background-color: #b3aeb3;
 }
 
 .nosotrosMain {
@@ -209,7 +251,7 @@ header {
       grid-template-areas: "nosotrosPic nosotrosDecrip";
   padding-top: 10%;
   padding-bottom: 10%;
-  color: white;
+  color: black;
 }
 
 .nosotrosPic {
@@ -253,7 +295,7 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main;
-  background-color: #370232;
+  background-color: #b3aeb3;
 }
 
 .menuMain {
@@ -317,7 +359,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  color: black;
   font-style: oblique;
   font-variant: small-caps;
 }
@@ -361,7 +403,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: white;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: black;
   font-style: oblique;
   font-variant: small-caps;
 }
@@ -393,7 +437,7 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main;
-  background-color: #370232;
+  background-color: #b3aeb3;
 }
 
 .galeriaMain {
@@ -416,42 +460,43 @@ header {
   width: auto;
 }
 
-.item1 {
-  background-image: url(../imagenes/Foto1.JPG);
-  background-position: center;
-  background-size: cover;
+/*
+.item1{
+    background-image: url(../imagenes/Foto1.JPG);
+    background-position: center;
+    background-size: cover;
 }
 
-.item2 {
-  background-image: url(../imagenes/Foto2.JPG);
-  background-position: center;
-  background-size: cover;
+.item2{
+    background-image: url(../imagenes/Foto2.JPG);
+    background-position: center;
+    background-size: cover;
 }
 
-.item3 {
-  background-image: url(../imagenes/Foto3.JPG);
-  background-position: center;
-  background-size: cover;
+.item3{
+    background-image: url(../imagenes/Foto3.JPG);
+    background-position: center;
+    background-size: cover;
 }
 
-.item4 {
-  background-image: url(../imagenes/Foto4.JPG);
-  background-position: center;
-  background-size: cover;
+.item4{
+    background-image: url(../imagenes/Foto4.JPG);
+    background-position: center;
+    background-size: cover;
 }
 
-.item5 {
-  background-image: url(../imagenes/Foto5.JPG);
-  background-position: center;
-  background-size: cover;
+.item5{
+    background-image: url(../imagenes/Foto5.JPG);
+    background-position: center;
+    background-size: cover;
 }
 
-.item6 {
-  background-image: url(../imagenes/Foto6.JPG);
-  background-position: center;
-  background-size: cover;
-}
-
+.item6{
+    background-image: url(../imagenes/Foto6.JPG);
+    background-position: center;
+    background-size: cover;
+}  
+*/
 /* Style Contatos */
 .containerContactos {
   display: -ms-grid;
@@ -475,7 +520,7 @@ header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: main;
-  background-color: #370232;
+  background-color: #b3aeb3;
 }
 
 .contactosMain {

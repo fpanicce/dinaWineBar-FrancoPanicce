@@ -16,7 +16,7 @@
 .containerIndex{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1.5fr 1fr 0.2fr;
+    grid-template-rows: 0.1fr 1fr 1fr 0.2fr;
     grid-template-areas:
     "header header"
     "main main"
@@ -31,7 +31,10 @@
 
 .mainIndex{
     grid-area: main;
-    background-color: $fondo;
+    background-image: url(../imagenes/FondoDina.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 footer{
@@ -40,12 +43,12 @@ footer{
 
 .mapa{
     grid-area: mapa;
-    background-color: rgb(242, 234, 241);
+    background-color: $fondoMapa;
 }
 
 .imagenFront{
     grid-area: imagenFront;
-    background-color: rgb(242, 234, 241);
+    background-color: $fondoMapa;
 }
 
 header{
@@ -69,7 +72,7 @@ header{
 .mainIndex{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .textoDina{
@@ -79,21 +82,24 @@ header{
     color: $letra;
 }
 
+/*
 .parrafoDina{
     display: flex;
     justify-content: center;
     align-items: center;
     color: $letra;
 }
-
+*/
 .imagenFront{
     display: flex;
     justify-content: center;
+    @extend %padding;
 }
 
 .mapa{
     display: flex;
     justify-content: center;
+    @include paddingImg(10%);
 }
 
 /* Style Nosotros */
@@ -185,10 +191,7 @@ header{
     grid-template-areas: 
     "picCocktail textoCocktail"
     ;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
+    @include margin(1%);
 }
 
 .picCocktail{
@@ -231,6 +234,7 @@ header{
     grid-area: textoPlatos;
     display: flex;
     justify-content: center;
+    align-content: center;
     color: $letra;
     font-style: oblique;
     font-variant: small-caps;
@@ -278,7 +282,7 @@ header{
     height: auto;
     width: auto;
 }
-
+/*
 .item1{
     background-image: url(../imagenes/Foto1.JPG);
     background-position: center;
@@ -313,7 +317,8 @@ header{
     background-image: url(../imagenes/Foto6.JPG);
     background-position: center;
     background-size: cover;
-}
+}  
+*/
 
 /* Style Contatos */
 

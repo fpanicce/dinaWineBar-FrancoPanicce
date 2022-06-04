@@ -20,10 +20,35 @@ $imagenes:(
     item5: url(../imagenes/Foto5.JPG),
     item6: url(../imagenes/Foto6.JPG),
 );
-@each $list, $link in imagenes{
+@each $list, $link in $imagenes{
     .#{$list}{
         background-image: $link;
         background-position: center;
         background-size: cover;
     }
+}
+
+/*Aplicamos el extend*/
+
+%padding{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*Aplicamos el mixins*/
+
+@mixin paddingImg ($porcentaje) {
+    padding-top: $porcentaje;
+    padding-bottom: $porcentaje;
+    padding-left: $porcentaje;
+    padding-right: $porcentaje;
+}
+
+@mixin margin ($margin) {
+    margin-top: $margin;
+    margin-bottom: $margin;
+    margin-left: $margin;
+    margin-right: $margin;
 }
