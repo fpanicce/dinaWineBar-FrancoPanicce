@@ -98,8 +98,8 @@ Declaro el mapa y lo combino con un each*/
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 0.1fr 1fr 1fr 0.2fr;
-      grid-template-rows: 0.1fr 1fr 1fr 0.2fr;
+  -ms-grid-rows: 0.1fr 1.2fr 1fr 0.2fr;
+      grid-template-rows: 0.1fr 1.2fr 1fr 0.2fr;
       grid-template-areas: "header header" "main main" "imagenFront mapa" "footer footer";
 }
 
@@ -665,13 +665,13 @@ header {
 
 /* Doy tamaño a la imagen del mapa y la imagen */
 .mapa img {
-  height: 450px;
-  width: 450px;
+  height: 350px;
+  width: 350px;
 }
 
 .imagenFront img {
-  height: 450px;
-  width: 450px;
+  height: 350px;
+  width: 350px;
 }
 
 /* Ajustamos las Imagenes del Menu */
