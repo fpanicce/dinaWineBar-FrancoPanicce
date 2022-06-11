@@ -53,10 +53,10 @@ footer{
 
 header{
     display: grid;
-    grid-template-columns: 0.1fr 3fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "logo nav";
+    "nav";
     align-items: center;
     align-content: center;
 }
@@ -126,9 +126,10 @@ header{
 .nosotrosMain{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: 
     "nosotrosPic nosotrosDescrip"
+    "nosotrosPic nosotrosConocenos"
     ;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -142,10 +143,15 @@ header{
 }
 
 .nosotrosDescrip{
-    grid-area: nosotrosPic;
+    grid-area: nosotrosDescrip;
     display: flex;
     justify-content: center;
 }
+
+.nosotrosConocenos{
+    grid-area: nosotrosConocenos;
+}
+
 
 
 /* Style Menu */
@@ -376,9 +382,10 @@ header{
     .nosotrosMain{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr;
         grid-template-areas: 
         "nosotrosDescrip"
+        "nosotrosConocenos"
         "nosotrosPic";
     }
 
@@ -386,6 +393,19 @@ header{
     .nosotrosH1{
         display: flex;
         padding-top: 10%;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .conocenos{
+        display: flex;
+        padding-top: 10%;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .parrafo1{
+        display: flex;
         justify-items: center;
         justify-content: center;
     }
