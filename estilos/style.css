@@ -117,7 +117,7 @@ Declaro el mapa y lo combino con un each*/
   grid-area: main;
   background-image: url(../imagenes/FondoDina.JPG);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -183,14 +183,6 @@ header {
   color: black;
 }
 
-/*
-.parrafoDina{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $letra;
-}
-*/
 .imagenFront {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,43 +459,6 @@ header {
   width: auto;
 }
 
-/*
-.item1{
-    background-image: url(../imagenes/Foto1.JPG);
-    background-position: center;
-    background-size: cover;
-}
-
-.item2{
-    background-image: url(../imagenes/Foto2.JPG);
-    background-position: center;
-    background-size: cover;
-}
-
-.item3{
-    background-image: url(../imagenes/Foto3.JPG);
-    background-position: center;
-    background-size: cover;
-}
-
-.item4{
-    background-image: url(../imagenes/Foto4.JPG);
-    background-position: center;
-    background-size: cover;
-}
-
-.item5{
-    background-image: url(../imagenes/Foto5.JPG);
-    background-position: center;
-    background-size: cover;
-}
-
-.item6{
-    background-image: url(../imagenes/Foto6.JPG);
-    background-position: center;
-    background-size: cover;
-}  
-*/
 /* Style Contatos */
 .containerContactos {
   display: -ms-grid;
@@ -543,7 +498,7 @@ header {
 }
 
 /* MEDIAQUERY */
-/* Media Query para 500px*/
+/* Media Query para 700px*/
 @media (max-width: 700px) {
   /* Media Query Index */
   .containerIndex {
